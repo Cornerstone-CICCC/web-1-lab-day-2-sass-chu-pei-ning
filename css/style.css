@@ -1,0 +1,115 @@
+header {
+  background-color: yellow;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+header nav ul {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  padding: 0%;
+  gap: 12px;
+}
+header nav li {
+  list-style: none;
+}
+
+main section {
+  width: 100%;
+  height: auto;
+}
+main h2 {
+  background-color: #3fe6ec;
+  padding: 10px;
+  position: sticky;
+  top: 75px;
+  z-index: 1;
+}
+main .gallery {
+  width: auto;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .gallery img {
+  width: 32vw;
+  height: 32hw;
+  object-fit: cover;
+}
+main .fruit-hover figure {
+  position: relative;
+}
+main .fruit-hover img {
+  display: block;
+  width: auto;
+  max-width: 50%;
+}
+main .fruit-hover figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+main .fruit-hover img:hover + figcaption {
+  display: block;
+  background: red;
+  color: white;
+}
+main .back-to-top-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: black;
+  border-radius: 24px;
+  box-shadow: 0px 0px 2px 2px rgb(28, 28, 28);
+}
+main .back-to-top-btn a {
+  color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    background-color: blue;
+  }
+  main h1 {
+    font-size: 2em;
+  }
+  main h2 {
+    font-size: 2em;
+    background-color: bisque;
+  }
+  main p {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header {
+    background-color: green;
+  }
+  main h1 {
+    font-size: 0.5em;
+  }
+  main h2 {
+    font-size: 0.5em;
+    background-color: khaki;
+  }
+  main p {
+    font-size: 0.5em;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

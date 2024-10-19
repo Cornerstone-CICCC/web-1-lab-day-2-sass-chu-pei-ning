@@ -1,0 +1,37 @@
+@media only screen and (min-width: 1200px) {
+      header {
+            background-color: blue;
+      }
+      main {
+            h1 {
+                  font-size: 2em;
+            }
+            h2 {
+                  font-size: 2em;
+                  background-color: bisque;
+            }
+            p {
+                  font-size: 2em;
+            }
+      }
+
+}
+
+@media only screen and (max-width: 700px) {
+      header {
+            background-color: green;
+      }
+      main {
+            h1 {
+                  font-size: .5em;
+            }
+            h2 {
+                  font-size: .5em;
+                  background-color: khaki;
+            }
+            p {
+                  font-size: .5em;
+            }
+      }
+
+}
